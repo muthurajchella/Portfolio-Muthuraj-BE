@@ -1,0 +1,1051 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,600;1,200&display=swap');
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .8s;
+}
+
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+}
+
+body{
+    background-color: white;
+}
+
+.btn{
+    padding: .5rem 1.5rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 5rem;
+}
+
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    background-color: black;
+    color: gold;
+}
+
+/* heading black*/
+.heading-bk{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.heading-bk h1{
+    font-size: 2rem;
+    color: rgb(253, 251, 251);
+}
+
+.heading-bk h1 span{
+    font-size: 2rem;
+    color: gold;
+}
+
+.hr-bk{
+    width: 100%;
+    border-bottom: solid 1px rgb(63, 62, 62);
+    margin-top: 1rem;
+}
+/* heading white*/
+.heading-wh{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.heading-wh h1{
+    font-size: 2rem;
+    color: black;
+}
+
+.heading-wh h1 span{
+    font-size: 2rem;
+    color: gold;
+}
+
+.hr-wh{
+    width: 100%;
+    border-bottom: solid 1px rgb(209, 205, 205);
+    margin-top: 1rem;
+    margin-bottom: 1rem       ;
+}
+
+.container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+/*Header Start*/
+header{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header-flex{
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    transition: .1s;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+a.active{
+    color: gold;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+}
+
+nav ul li a:hover{
+    color: gold;
+}
+
+
+#icon{
+    color: gold;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+/*Header End*/
+
+/*Home Start*/
+.home{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#00000054, #00000054), url(../img/heroimg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0rem;
+    transition: .5s;
+}
+
+.flex-home{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-cont{
+    width: 50%;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.homeCont{
+    width: 100%;
+    height: auto;
+    line-height: 4rem;
+}
+
+.homeCont h1{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    padding-top: 2.5rem;
+}
+
+.homeCont h1 span{
+    color: gold;
+    transition: .5s;
+}
+
+.homeCont h1:hover span{
+    color: white;
+}
+
+.homeCont h1:hover{
+    color: gold;
+    transform: scale(.9);
+}
+
+.homeCont h3{
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.homeCont h3 span{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.home-img{
+    width: 50%;
+    height: auto;
+}
+
+.homeImg{
+    width: 100%;
+    height: auto;
+    padding: 5rem;
+}
+
+.homeImg img{
+    width: 100%;
+    object-fit: cover;
+    border: solid 1px black;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 50%;
+    border: 5px solid gold;
+    transition: .7s;
+}
+
+.homeIcons ul{
+    display: flex;
+}
+
+.homeIcons ul li{
+    list-style: none;
+}
+
+.homeIcons ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    margin-right: 2rem;
+    transition: .1s;
+}
+
+.homeIcons ul li a:hover{
+    color: gold;
+}
+/*Home End*/
+
+/*About Satrt*/
+.about{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 2rem;
+    padding: 3rem 0rem;
+}
+
+.about-obj{
+    width: 100%;
+    height: auto;
+    padding-top: 1.5rem;
+}
+
+.about-obj h1{
+    font-size: 1.8rem;
+    color: black;
+}
+
+.about-obj p{
+    font-size: 1.2rem;
+    color: rgb(55, 55, 102);
+}
+
+.about-flex{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-details{
+    width: 50%;
+    height: auto;
+    padding-right: 1rem;
+}
+.aboutDetail{
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 5px rgb(212, 212, 212);
+    line-height: 4rem;
+    padding: 2rem;
+}
+.aboutDetail h1{
+    font-size: 1.5rem;
+    color: gold;
+}
+
+.aboutDetail h1 span{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.aboutDetail h1 span a{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.aboutDetail h1 span a:hover{
+    color: gold;
+}
+
+.about-video{
+    width: 50%;
+    height: auto;
+}
+
+.aboutVideo{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px rgb(212, 212, 212);
+}
+
+.aboutVideo video{
+    width: 100%;
+    height: 19.89rem;
+}
+/*About End*/
+
+/*Skills Start*/
+.skills{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    background-color: black;
+    padding: 3rem 0rem;
+}
+
+.skills-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.skills-Flex-box{
+    width: 25%;
+    height: auto;
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+.skillsBox{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.outCricle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgb(221, 219, 219);
+}
+
+.innerCricle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 5px gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.innerCricle i{
+    font-size: 4rem;
+    color: white;
+}
+
+svg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.html circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: html 2s linear forwards;
+}
+
+@keyframes html{
+    100%{
+      stroke-dashoffset: 30;
+    }
+}
+
+.git circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: git 2s linear forwards;
+}
+
+
+@keyframes git{
+    100%{
+      stroke-dashoffset: 85;
+    }
+}
+
+.css circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: css 2s linear forwards;
+}
+
+@keyframes css{
+    100%{
+      stroke-dashoffset: 55;
+    }
+  }
+ 
+.boot circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: boot 2s linear forwards;
+}
+
+@keyframes boot{
+    100%{
+      stroke-dashoffset: 55;
+    }
+  }
+
+  
+.js circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: js 2s linear forwards;
+}
+
+@keyframes js{
+    100%{
+      stroke-dashoffset: 85;
+    }
+  }
+
+.react circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: react 2s linear forwards;
+}
+
+@keyframes react{
+    100%{
+      stroke-dashoffset: 85;
+    }
+  }
+
+.redux circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: redux 2s linear forwards;
+}
+
+@keyframes redux{
+    100%{
+      stroke-dashoffset: 105;
+    }
+  }
+
+.jq circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: jq 2s linear forwards;
+}
+
+@keyframes jq{
+    100%{
+      stroke-dashoffset: 125;
+    }
+  }
+
+.skillscon{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
+
+.skillscon h3{
+    font-size: 1rem;
+    color: white;
+}
+
+.skillscon p{
+    font-size: 1rem;
+    color: white;
+}
+
+/*Skills End*/
+
+/*Works Start*/
+.works{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    padding: 3rem 0rem;
+}
+
+.workFlex{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 0rem;
+}
+
+.work-boxs{
+    width: 33.3%;
+    height: auto;
+    padding-right: 1rem;
+    /* position: relative; */
+}
+
+.workBox{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    /* position: relative; */
+    
+}
+
+.workBox img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* position: relative; */
+}
+
+.workBox:hover img{
+    transform: scale(1.1);
+}
+
+/*Works End*/
+
+/*Education Start*/
+.education{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 2rem;
+    padding: 3rem 0rem;
+}
+
+.edu-flex{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5rem 0rem;
+}
+
+.edu-box1{
+    width: 50%;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.eduBox1{
+    width: 100%;
+    height: auto;
+}
+
+.eduBox1 i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.eduBox1 span{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.eduBox1 h3{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.edu-box2{
+    width: 50%;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.eduBox2{
+    width: 100%;
+    height: auto;
+}
+
+.eduBox2 i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.eduBox2 span{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.eduBox2 h3{
+    font-size: 1.5rem;
+    color: white;
+}
+/*Education End*/
+
+/*Footer Start*/
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(15, 13, 13);
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-cont{
+    text-align: center;
+}
+
+.footer-cont p{
+    font-size: 1rem;
+    color: white;
+}
+
+.footer-cont p span{
+    font-size: 1rem;
+    color: rgb(221, 189, 7);
+    cursor: pointer;
+    transition: .5rem;
+    font-weight: 600;
+}
+
+.footer-cont p span:hover{
+    color: white;
+}
+
+.footer-cont ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.footer-cont ul li{
+   list-style: none;
+}
+
+.footer-cont ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(238, 235, 235);
+    transition: .5s;
+}
+
+.footer-cont ul li a:hover{
+    color: gold;
+}
+/*Footer End*/
+
+
+@media (max-width:991px){
+    .container{
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    /*Header Start*/
+    #icon{
+        display: block;
+    }
+
+    header{
+        position: relative;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    nav{
+        display: flex;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 4.6rem;
+        left: -100%;
+        width: 90%;
+        background-color: gold;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 5rem;
+        text-align: center; 
+        padding: 2.3rem 0rem;
+        transition: all .5s ;
+    }
+
+    nav ul li a{
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    a.active{
+        color: white;
+        font-weight: 600;
+    }
+
+    nav ul.show{
+        left: 0;
+    }
+
+    nav ul li a:hover{
+        color: white;
+    }
+
+    /*Header End*/
+
+    /*Home Start*/
+    .home{
+        padding-top: 2.5rem;
+    }
+
+    .flex-home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-cont{
+        width: 100%;
+        text-align: center;
+        padding-left: 0rem;
+    }
+
+    .home-cont h1{
+        font-size: 2rem;
+    }
+
+    .home-cont h1 span{
+        font-size: 2rem;
+    }
+
+    .home-cont h3{
+        font-size: 1.3rem;
+    }
+
+    .home-cont h3 span{
+        font-size: 1.3rem;
+    }
+
+    .home-img{
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .homeImg{
+        width: 50%;
+        margin: auto;
+        padding: 3rem;
+        border: solid 2px gold;
+    }
+
+    .homeImg img{
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border: none;
+    }
+
+    .homeImg:hover img{
+        transform: scale(1.23);
+    }
+
+    .homeIcons ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Home End*/
+
+    /*About Start*/
+    .about-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-details{
+        width: 100%;
+        height: auto;
+        padding-right: 0rem;
+    }
+
+    .aboutDetail h1{
+        font-size: 1.5rem;
+    }
+
+    .aboutDetail h1 span{
+        font-size: 1.5rem;
+    } 
+
+    .about-video{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .aboutVideo{
+        padding: 0rem;
+    }
+
+    .about-obj h1{
+        font-size: 2rem;
+    }
+
+    .about-obj p{
+        font-size: 1rem;
+    }
+
+    .aboutDetail{
+        line-height: 3rem;
+    }
+    /*About Start*/
+
+    .skills-flex{
+        width: 100%;
+        height: auto;
+    }
+
+    .skills-Flex-box{
+        width: 50%;
+        height: auto;
+    }
+
+    .work-boxs{
+        width: 50%;
+        height: auto;
+    }
+
+    .edu-flex{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:768px){
+    .container{
+        width: 95%;
+        margin: auto;
+        height: auto;
+    }
+
+    .homeCont h1{
+        font-size: 1.9rem;
+    }
+
+    .homeCont h1 span{
+        font-size: 1.9rem;
+    }
+
+    .homeCont h3{
+        font-size: 1.2rem;
+    }
+
+    .homeCont h3 span{
+        font-size: 1.2rem;
+    }
+
+    .homeImg{
+        padding: 2rem;
+    }
+
+    .homeImg:hover img{
+        transform: scale(1.2);
+    }
+
+    .aboutDetail h1{
+        font-size: 1.5rem;
+    }
+
+    .aboutDetail h1 span{
+        font-size: 1.5rem;
+    } 
+
+    .about-obj h1{
+        font-size: 1.7rem;
+    }
+
+    .about-obj p{
+        font-size: 1rem;
+    }
+
+    
+    .skills-Flex-box{
+        width: 50%;
+        height: auto;
+    }
+
+    .work-boxs{
+        width: 100%;
+        height: auto;
+    }
+
+    .edu-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edu-box1{
+        width: 100%;
+    }
+
+    .edu-box2{
+        width: 100%;
+        margin-top: 1rem;
+    }
+   
+}
+
+
+@media (max-width:320px){
+    .container{
+        width: 98%;
+        margin: auto;
+        height: auto;
+    }
+
+    .homeImg{
+        padding: .5rem;
+    }
+
+    .homeImg:hover img{
+        transform: scale(1.1);
+    }
+
+    .aboutDetail h1{
+        font-size: 1.3rem;
+    }
+
+    .aboutDetail h1 span{
+        font-size: 1.3rem;
+    } 
+
+    .about-obj h1{
+        font-size: 1.5rem;
+    }
+
+    
+    .about-obj p{
+        font-size: 1rem;
+    }
+
+    .aboutDetail{
+        line-height: 2rem;
+    }
+
+    .skills-Flex-box{
+        width: 100%;
+        height: auto;
+    }
+   
+
+}
